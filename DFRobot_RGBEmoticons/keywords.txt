@@ -1,0 +1,24 @@
+###########################################
+# Syntax Coloring Map For DFRobot_RGBEmoticons
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+DFRobot_RGBEmoticons	KEYWORD1	DFRobot_RGBEmoticons
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+
+displayEmoticons	KEYWORD2
+setLuminance	KEYWORD2
+setColor	KEYWORD2
+begin	KEYWORD2
+clearScreen		KEYWORD2
+showCustomEmoticons	KEYWORD2
+
+###########################################
+# Constants (LITERAL1)
+###########################################
