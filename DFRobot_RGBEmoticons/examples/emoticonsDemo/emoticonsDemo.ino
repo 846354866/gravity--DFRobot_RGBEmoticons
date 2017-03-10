@@ -27,11 +27,11 @@
 
 uint8_t EmoticonsCnt=0;
 
-SoftwareSinglebus  mySingleBus(SINGLE_BUS_PIN);
-DFRobot_RGBEmoticons rgb(&mySingleBus);
+SoftwareSinglebus  emoticonsBus(SINGLE_BUS_PIN);
+DFRobot_RGBEmoticons rgb(&emoticonsBus);
 
 void setup() {
-  mySingleBus.begin();
+  emoticonsBus.begin();
   rgb.begin();
 }
 
