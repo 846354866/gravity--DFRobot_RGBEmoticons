@@ -50,7 +50,7 @@ void DFRobot_RGBEmoticons::showCustomEmoticons(uint8_t *p_data, uint8_t p_colro,
 {
 	for(uint8_t i=0; i<len; i++){
 		EmoticonsPixel(0x0A, p_data[i], p_colro);
-		delay(4);
+		delay(1);
     }
 	writeRegister(0x17, 0x01);
 }
@@ -60,7 +60,7 @@ void DFRobot_RGBEmoticons::EmoticonsPixel(uint8_t registerAddr, uint8_t p_data, 
 	bus->beginTransmission(Emoticons_ADDR,WRITE);
 	bus->write(registerAddr);//register address
 	bus->write(p_data);//data
-	delay(5);
+	delay(1);
 	bus->write(p_colro);//color
 	bus->endTransmission();
 }
@@ -71,5 +71,5 @@ void DFRobot_RGBEmoticons::writeRegister(uint8_t registerAddr, uint8_t str)
 	bus->write(registerAddr);//register address
 	bus->write(str);//data
 	bus->endTransmission();
-	delay(5);
+	delay(1);
 }

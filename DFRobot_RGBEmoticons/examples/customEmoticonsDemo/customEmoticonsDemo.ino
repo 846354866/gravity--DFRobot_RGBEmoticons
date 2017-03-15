@@ -29,11 +29,11 @@ static uint8_t Emoticons[129] = {0x00, 0x10, 0x20, 0x30, 0x40, 0x50, 0x60, 0x70,
                                  0x01, 0x11, 0x21, 0x31, 0x41, 0x51, 0x61, 0x71,
                                  0x23, 0x34, 0x45, 0x56, 0x33, 0x44, 0x55};
 
-SoftwareSinglebus  emoticonsBus(SINGLE_BUS_PIN);
-DFRobot_RGBEmoticons rgb(&emoticonsBus);
+SoftwareSinglebus  mySingleBus(SINGLE_BUS_PIN);
+DFRobot_RGBEmoticons rgb(&mySingleBus);
 
 void setup() {
-  emoticonsBus.begin();
+  mySingleBus.begin();
   rgb.begin();
   rgb.clearScreen();//Clear the screen
 }
